@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <h3 class="py-5">Update task</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <form method="POST">
+          {% csrf_token %}
+          {{form|crispy}}
+          <input type="submit" class="btn btn-primary" name="save" text="save">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

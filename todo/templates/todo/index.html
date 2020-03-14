@@ -9,10 +9,6 @@
         <form method="POST" action="">
           {% csrf_token %}
           {{form|crispy}}
-          <!-- <div class="form-group" style="	width: 200px;">
-              <input type="text" class="form-control" placeholder="Name" input type="text" maxlength="64" required="" id="id_title"> </div>
-            <div class="form-group" style="	width: 400px;">
-              <input type="text" class="form-control w-100 mx-2" placeholder="Text" name="text" cols="40" rows="10" required="" id="id_text"> </div> -->
           <div class="justify-content-center align-items-center d-flex">
             <button type="submit" class="btn btn-primary mx-2 ">ADD</button>
           </div>
